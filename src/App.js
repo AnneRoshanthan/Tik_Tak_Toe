@@ -87,7 +87,7 @@ function App() {
   return (
     <div className="App">
       <div className="inner-container">
-        <h1>Tic Tak Toe</h1>
+        <h1>Tic Tac Toe</h1>
         <p>{!gameOver && `${currentplayer} it's your turn`} </p>
         {gameOver && (
           <h2 className="game-over">
