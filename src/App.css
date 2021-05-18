@@ -1,77 +1,55 @@
-.App {
-  text-align: center;
-  background-color: #79ff7f;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-table {
-  margin: 0 auto;
-}
-
-td {
-  width: 150px;
-  height: 120px;
-  border-right: 5px solid white;
-  border-bottom: 5px solid white;
-}
-
-tr:last-child > td {
-  border-bottom: none;
-}
-
-td:last-child {
-  border-right: none;
-}
-
-.fade-in{
-  font-size: 50px;
-  animation: fadeIn ease-in-out 0.4s;
-}
-
-@keyframes fadeIn{
-  0%{
-    opacity: 0%;
-  }
-  50% {
-    font-size: 120px;
-  }
-  100%{
-    opacity: 100%;
-  }
-}
-
-button{
-  background-color: white;
-  color: #79ff7f;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.game-over{
-  animation: fade-game ease-in-out 0.4s;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: #79ff7f;
-  color: white;
-}
-
-@keyframes fade-game{
-  0% {
-    opacity: 0;
+* {
+    margin: 0;
+    padding: 0;
   }
   
-  50%{
-    font-size: large;
+  body {
+    background-color: #950740;
+    overflow-x: hidden;
   }
-
-  100% {
-    opacity: 100%;
+  
+  .playground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    flex-wrap: wrap;
   }
-}
+  
+  .heading {
+    width: 100vw;
+    font-weight: 400;
+    background: -webkit-linear-gradient(rgb(28, 97, 202), rgb(26, 189, 230));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #c3073f;
+    padding-top: 5%;
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    color: white;
+  }
+  
+  .right {
+    position: absolute;
+    top: 36%;
+    left: 8%;
+    font-size: 250px;
+    color: rgb(28, 97, 202);
+  }
+  .left {
+    position: absolute;
+    top: 36%;
+    left: 74%;
+    font-size: 250px;
+    color: rgb(28, 97, 202);
+  }
+  .copy{
+      font-size: 15px;
+  }
+  
